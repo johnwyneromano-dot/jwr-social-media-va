@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* Navy dark: #0E2A47 */
+    --navy: 0.24 0.065 243;
+    /* Sage green: #8FA79A */
+    --sage: 0.67 0.044 165;
+    /* Soft sage light: #D4E0DA */
+    --sage-light: 0.88 0.025 165;
+    /* Off-white: #F6F7F8 */
+    --background: 0.97 0.003 220;
+    --foreground: 0.24 0.065 243;
+    --card: 1 0 0;
+    --card-foreground: 0.24 0.065 243;
+    --popover: 1 0 0;
+    --popover-foreground: 0.24 0.065 243;
+    /* Primary = Navy */
+    --primary: 0.24 0.065 243;
+    --primary-foreground: 0.985 0 0;
+    /* Secondary = Sage */
+    --secondary: 0.67 0.044 165;
+    --secondary-foreground: 1 0 0;
+    --muted: 0.95 0.006 220;
+    --muted-foreground: 0.48 0.025 225;
+    --accent: 0.88 0.025 165;
+    --accent-foreground: 0.24 0.065 243;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.9 0.008 220;
+    --input: 0.92 0.006 220;
+    --ring: 0.67 0.044 165;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.24 0.065 243;
+    --sidebar-primary: 0.24 0.065 243;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.88 0.025 165;
+    --sidebar-accent-foreground: 0.24 0.065 243;
+    --sidebar-border: 0.9 0.008 220;
+    --sidebar-ring: 0.67 0.044 165;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
